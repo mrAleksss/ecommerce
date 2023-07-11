@@ -13,7 +13,7 @@
     <h2 class="text-center">Ваша Корзина зараз пуста</h2>
     <br>
     <div class="text-center">
-      <a href="{% url 'store' %}" class="btn btn-success">До перегляду товарів</a>
+      <a href="{% url 'store' %}" class="btn btn-dark">До перегляду товарів</a>
     </div>
   
   {% else %}
@@ -107,8 +107,8 @@
         <p class="text-center mb-3">
           <img src="{% static 'images/misc/payments.png' %}" height="26">
         </p>
-        <a href="./place-order.html" class="btn btn-primary btn-block"> Замовити </a>
-        <a href="{% url 'store' %}" class="btn btn-light btn-block">Продовжити Shopping</a>
+        <a href="{% url 'checkout' %}" class="btn btn-success btn-block"> До оформлення замовлення </a>
+        <a href="{% url 'store' %}" class="btn btn-dark btn-block">Продовжити Shopping</a>
       </div> <!-- card-body.// -->
       </div> <!-- card.// -->
   
