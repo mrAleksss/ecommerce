@@ -4,9 +4,12 @@ from carts.models import CartItem
 from .forms import OrderForm
 from .models import Order
 from django.http import HttpResponse
+import json
 
 
 def payments(request):
+    body = json.loads(request.body)
+    print(body)
     return render(request, 'orders/payments.html')
 
 
